@@ -1,0 +1,52 @@
+img {
+  height: 521px;
+}
+
+html {
+  background-color: black;
+  color: black;
+}
+
+body {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 25px;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  width: 575px;
+}
+
+div {
+  background-color: white;
+  border-radius: 20px;
+}
+
+nav {
+  background-color: grey;
+   display: flex;
+  text-align: center;
+}
+img {
+  border: 5px black dashed;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+a:hover {
+  background-color: #bdbdbd;
+  color: black;
+}
+footer {
+  background-color: grey;
+  text-align: center;
+}
