@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  background-color: #d6d6d6;
+}
+
+header,footer{
+  background-color: #fce700;
+  text-align: center;
+  padding: 15px;
+}
+
+h1 {
+  background-color: #ad161a;
+  display: inline;
+  color: #fbf8f4;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #1c1004;
+  display: inline;
+  color: #fbf8f4;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+div,
+section {
+  background-color: white;
+  border-radius: 15px;
+  padding: 7px;
+  margin: 10px;
+  box-shadow: 2px 8px rgba(254, 255, 252, 0.15);
+}
+
+a {
+  color: #fbf8f4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* class  */
+.characters {
+  background-color: #fbc502;
+  border: 10px solid #fbe95e;
+  width: 300px;
+  text-align: center;
+}
+
+.characters:hover {
+  transform: scale(1.05);
+}
+
+/* id */
+#dorm_room {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #fbc502;
+  border: 5px solid #fbe95e;
+  font-size: 18px;
+}
+
+tr:hover {
+  background-color: #fdc700;
+  border: 5px solid #fbe95e;
+  font-size: 18px;
+}
+
+.link {
+  color: black;
+  background-color: white;
+  font-size:25px;
+}
+
+#hidden {
+  visibility: hidden;
+}
+#shown:hover #hidden{
+  visibility: visible;
+}
+
+/* css responsiveness */
+/* phone  */
+@media (max-width:425px){
+  body{
+    background-color: lightgray;
+  }
+}
+
+/* tablet */
+@media (min-width:430px) and (max-width:770px){
+  body{
+    background-color: darkgray;
+  }
+}
+
+/* laptop */
+@media (min-width:775px){
+  body{
+    background-color: gray;
+  }
+}
