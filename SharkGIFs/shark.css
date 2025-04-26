@@ -1,0 +1,32 @@
+body {
+  font-family: "East Sea Dokdo", sans-serif;
+}
+
+p {
+  font-size: 35px;
+  position: absolute;
+  z-index: 1;
+  background-color: #00d3fe;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+img {
+  width: 85%;
+  position: relative;
+ transition: 1s;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+img:hover {
+  width:100%;
+}
