@@ -1,0 +1,118 @@
+.Card {
+  height: 450px;
+  width: 350px;
+  margin: 15px;
+  position: relative;
+  /* make it 3D but flat */
+
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.Back,
+.Front {
+  height: 100%;
+  width: 100%;
+  /* remove padding for styling  */
+  /* hide the back when rotating the card */
+  backface-visibility: hidden;
+}
+
+.Back {
+  background-color: #104aa0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.Front {
+  position: absolute;
+ 
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* stats styling
+1. positioning on top of other cards 
+2. put it at the bottom of the card 
+3. color / background color 
+4. edges  */
+.stats {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-family: "Jolly Lodger", system-ui;
+  width: 100%;
+  letter-spacing: 3px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* add some indentation to the text  */
+h1 {
+  text-indent: 10px;
+}
+
+p {
+  text-indent: 10px;
+  font-size: 20px;
+}
+
+/* create an inner card so that there is a split between front and back  */
+.inner_card {
+  background-color: #118fce;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+#Red > .Front {
+  transform: rotateY(180deg);
+}
+#Blue > .Front {
+  transform: rotateY(180deg);
+}
+#Pink > .Front {
+  transform: rotateY(180deg);
+}
+#Green > .Front {
+  transform: rotateY(180deg);
+}
+#Black > .Front {
+  transform: rotateY(180deg);
+}
+#Gold > .Front {
+  transform: rotateY(180deg);
+}
+/* rotate the back part of the card */
+/* create the flipping effect */
+.Card:hover #Red{
+  transform: rotateY(-180deg);
+}
+.Card:hover #Blue{
+  transform: rotateY(-180deg);
+}
+.Card:hover #Pink{
+  transform: rotateY(-180deg);
+}
+.Card:hover #Green{
+  transform: rotateY(-180deg);
+}
+.Card:hover #Black{
+  transform: rotateY(-180deg);
+}
+.Card:hover #Gold{
+  transform: rotateY(-180deg);
+}
+/* create other versions of the flipping effect */
